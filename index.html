@@ -76,6 +76,27 @@
         display: block;
       }
 
+      .footer-span {
+        color: #666;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      .footer-span i.fa {
+        color: #E90606;
+        margin: 0 3px;
+        font-size: 15px;
+        animation: pound .35s infinite alternate;
+        -webkit-animation: pound .35s infinite alternate
+      }
+
+      @keyframes pound {
+        to {
+          transform: scale(1.1);
+        }
+      }
+
       /* Custom code for the demo */
     </style>
   </head>
@@ -532,6 +553,9 @@
       >
         Action!
       </button>
+      <span class="footer-span">
+        Made with <i class="fa fa-heart pulse"></i> in <a href="#" target="_blank">Delhi</a>
+      </span>
     </section>
     <!--Footer-->
     <!--- <footer class="bg-white">
